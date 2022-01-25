@@ -1,7 +1,5 @@
 # wavve_subscription_exit_rate
 
-<h2>[Competition - wavve 재구독 여부 분류] </h2> 
-
 - 수행자
  <p> 김경록(전체과정 단독 수행) </p>
 
