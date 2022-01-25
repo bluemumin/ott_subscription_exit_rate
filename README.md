@@ -28,3 +28,5 @@
 		&nbsp;+ (wavve내 영화 추가 구매 여부, 코인 추가 거래 내역 등) 플랫폼 적극적 이용 수치 인사이트 개발 가능 예상 </p>
 		
 *보러가기: [wavve 재구독 여부 분류 코드](https://github.com/bluemumin/wavve_subscription_exit_rate/blob/main/wavve_%EC%9E%AC%EA%B5%AC%EB%8F%85%EC%97%AC%EB%B6%80_%EB%B6%84%EB%A5%98_public%EC%9A%A9.ipynb)*
+
+*문의 후, 보기 가능: [wavve 재구독 여부 실제 코드](https://github.com/bluemumin/wavve_subscription_exit_rate_private)*
