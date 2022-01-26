@@ -1,4 +1,4 @@
-# wavve_subscription_exit_rate
+ott_subscription_exit_rate
 
 - 수행자
  <p> 김경록(전체과정 단독 수행) </p>
@@ -7,11 +7,11 @@
  <p> python(3.8) / Pandas, LightGBM </p>
 
 - Background 
- <p> wavve 신규 구독자의 3주간 시청 기록 활용, 1개월 뒤 재구독 여부를 사전 분류함.(이후 이탈 방지 혜택 부여) </p>
+ <p> ott 신규 구독자의 3주간 시청 기록 활용, 1개월 뒤 재구독 여부를 사전 분류함.(이후 이탈 방지 혜택 부여) </p>
 
 - Summary
 	<p>(1). Data Collection <br/>
-		- 그룹사 경진대회 데이터 제공[Wavve](데이터 외부 유출 금지로 미 업로드 및 관련 결과 삭제) </p>
+		- 경진대회 데이터 제공[OTT 서비스 중 하나](데이터 외부 유출 금지로 미 업로드 및 관련 결과 삭제) </p>
 	<p>(2). Data Preprocessing <br/>
 		- EDA (고객 결제 사항 + 시청 기록 데이터) <br/>
 	        - 변수 내 항목 간소화 (결제 코드, 결제 등록 기기, 컨텐츠별 시청 기기) <br/>
@@ -28,8 +28,8 @@
 		- 긍정적 사항 : 유저의 컨텐츠 시청 퍼센트(시청 시간/컨텐츠 길이) 파생 변수가 모델 개선에 효과적 <br/>
 	        - 피드백 : 결제 후, 마지막 시청일자 gap보다, 1주차별 시청 시간의 증가/감소 여부가 더 효과적임을 예상함 <br/>
 		- Futher Research : 해당 주차 드라마/영화 순위(외부 데이터) 활용한 인기 콘텐츠 선호도, <br/>
-		&nbsp;+ (wavve내 영화 추가 구매 여부, 코인 추가 거래 내역 등) 플랫폼 적극적 이용 수치 인사이트 개발 가능 예상 </p>
+		&nbsp;+ (ott 내 영화 추가 구매 여부, 코인 추가 거래 내역 등) 플랫폼 적극적 이용 수치 인사이트 개발 가능 예상 </p>
 		
-*보러가기: [wavve 재구독 여부 분류 코드](https://github.com/bluemumin/wavve_subscription_exit_rate/blob/main/wavve_%EC%9E%AC%EA%B5%AC%EB%8F%85%EC%97%AC%EB%B6%80_%EB%B6%84%EB%A5%98_public%EC%9A%A9.ipynb)*
+*보러가기: [ott 재구독 여부 분류 코드](https://github.com/bluemumin/ott_subscription_exit_rate/blob/main/ott_%EC%9E%AC%EA%B5%AC%EB%8F%85%EC%97%AC%EB%B6%80_%EB%B6%84%EB%A5%98_public%EC%9A%A9.ipynb)*
 
-*문의 후, 보기 가능(private): [wavve 재구독 여부 실제 코드](https://github.com/bluemumin/wavve_subscription_exit_rate_private)*
+*문의 후, 보기 가능(private): [ott 재구독 여부 실제 코드](https://github.com/bluemumin/wavve_subscription_exit_rate_private)*
