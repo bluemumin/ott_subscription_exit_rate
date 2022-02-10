@@ -1,10 +1,9 @@
 ## 1. OTT 신규 가입 후, 이탈자 파악을 위한 재 구독 여부 분류 모델
 
-- Member: 김경록
-- Status: Complete
-- Tag: Competition
-- 사용언어 / 핵심 라이브러리
-  python(3.8) / Pandas, LightGBM
+  - Member : 김경록
+  - Status : Complete
+  - Tag : Competition
+  - 사용언어 / 핵심 라이브러리 : python(3.8) / Pandas, LightGBM
 
 ## 2. Why
 OTT 플랫폼에 신규 가입한 구독자의 3주간의 시청 기록을 활용하여, 1개월 뒤 OTT 서비스를 다시 결제를 할 것인지를 사전 분류함.
