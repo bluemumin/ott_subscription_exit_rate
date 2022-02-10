@@ -1,22 +1,28 @@
-ott_subscription_exit_rate
+# 1. OTT 신규 가입 후, 이탈자 파악을 위한 재 구독 여부 분류 모델
 
-- 수행자
- <p> 김경록(전체과정 단독 수행) </p>
- 
- - 사용언어 / 핵심 라이브러리
- <p> python(3.8) / Pandas, LightGBM </p>
+- Member: 김경록
+- Status: Complete
+- Tag: Competition
+- 사용언어 / 핵심 라이브러리
+  python(3.8) / Pandas, LightGBM
 
-- Background 
- <p> ott 신규 구독자의 3주간 시청 기록 활용, 1개월 뒤 재구독 여부를 사전 분류함.(이후 이탈 방지 혜택 부여) </p>
+# 2. Why
+OTT 플랫폼에 신규 가입한 구독자의 3주간의 시청 기록을 활용하여, 1개월 뒤 OTT 서비스를 다시 결제를 할 것인지를 사전 분류함.
 
-- Summary
-	<p>(1). Data Collection <br/>
-		- 경진대회 데이터 제공[OTT 서비스 중 하나](데이터 외부 유출 금지로 미 업로드 및 관련 결과 삭제) </p>
-	<p>(2). Data Preprocessing <br/>
-		- EDA (고객 결제 사항 + 시청 기록 데이터) <br/>
-	        - 변수 내 항목 간소화 (결제 코드, 결제 등록 기기, 컨텐츠별 시청 기기) <br/>
-		- 파생변수 생성 (최신 컨텐츠 시청 기간 그룹화, 유저 컨텐츠 시청 퍼센트, 결제 후, 마지막 시청일자 gap 계산) <br/>
-		- Reduction (유저별 과도한 컨텐츠 시청 수, 최신 컨텐츠 과다 시청 수 절삭)</p>
+# 3. Data
+
+[그룹사 경진대회 데이터 제공] (데이터 외부 유출 금지 -> 미 업로드, 관련 결과 삭제)
+
+# 4. 분석 방법
+(a). Data Preprocessing 
+  - EDA : 고객 결제 사항 + 시청 기록 데이터
+
+  - 변수 내 항목 간소화 : 결제 코드, 결제 등록 기기, 컨텐츠별 시청 기기
+
+  - 파생변수 생성 : 최신 컨텐츠 시청 기간 그룹화, 유저 컨텐츠 시청 퍼센트, 결제 후, 마지막 시청일자 gap 계산
+
+  - Data Reduction : 유저별 과도한 컨텐츠 시청 수, 최신 컨텐츠 과다 시청 수 절삭
+
 	<p>(3). Model & Algorithms <br/>
 		- LightGBM 1차, 2차 수행 --> 최적의 parameter 확인(gridsearch + 5-fold) --> 최적의 threshold 확인(5-fold)  <br/>
 		- Xgboost, Randomforest 모델링 후, ensemble 수행 --> 결과 차이 x로 최종 제외 <br/>
